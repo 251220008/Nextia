@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+nav{
+    background: black;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+     animation-duration: 3s;
+  animation-name: slideinto;
+    height: 80px;
+    margin-top: -10%;
+    background: #acadbd;
+    padding: 5px;
+}
+@keyframes slideinto {
+  from {
+    margin-left: 100%;
+    width: 500%;
+
+    background: none;
+    padding: 100px;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+nav ul{
+    animation-duration: 5s;
+    animation-name: slideinthree;
+
+    float: right;
+    margin-right: 20px;
+    background: #001112;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+@keyframes slideinthree {
+  from {
+    background: grey;
+   
+  }
+
+  to {
+    background: #001112;
+      }
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-transform: bold;
+    font-family:"arial";
+}
+li a.active, li a:hover{
+    background: #700202;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:black;
+        opacity: 0.9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+.container__slider{ /*Modifica posicion de slider*/
+    max-width: 55%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 200%;
+    max-width: 800%;
+    height: 100%;
+    margin-left: 60%;
+    max-height: 600%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.cards{
+
+    position: relative;
+    width: 300%;
+    height: 50%;
+}
+
+.card{
+     animation-duration: 3s;
+     animation-name: slidein;
+    position: absolute;
+    width: 150%; /*Modificación de datos*/
+    height: 200%;/*Modificación de datos*/
+    left: 0;
+    right: 0%;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes slidein {
+  from {
+    
+    width: 300%;
+    margin-top: 500px;
+  }
+
+  to {
+    
+    width: 150%;
+    margin-top: 20px;
+
+  }
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:black;
+        opacity: 0.9; /*Roy*/
+        top: 80px;
+        left: -100%;
+        text-align: right;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
+.benchi{
+    margin-top: 20%;
+    height: 50%;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+
+		<title>Catalogo</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="estilos.css" />
+		<link rel="shortcut icon" href="logo reducido .ico" />
+	</head>
+	<body>
+		<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<a href="#" class="enlace">
+<img src="NEXTIA N LOGO.png" alt="" class="logo">
+</a>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a class="active" href="catalogo.html">Catalogo</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+		<header>
+			<h1 style="opacity: 0;">Catalogo</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Audi</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="imgs/slide 1.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Impresión 3d (0g a 10g)</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imgs/slide 1.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Impresión 3d (20g a 30g)</h2>
+					<p class="price">$200</p>
+					
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imgs/slide 3.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nextia Automate V1</h2>
+					<br>
+					<p class="price">$300</p>
+					<a href="ea.html"><button class="Infos">More information</button></a>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://aelectronics.com.mx/2527-large_default/modulo-relevadores-dos.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Modulo de relevador Nextia automate</h2>
+					<p class="price">$60</p>
+					<a href="ea.html"><button class="Infos">More information</button></a>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://electronicavaltierra.com.mx/wp-content/uploads/2019/06/MOD-TTP223.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Modulo sensor tactil Nextia automate</h2>
+					<p class="price">$60</p>
+					<a href="ea.html"><button class="Infos">More information</button></a>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://www.cablesysensores.com/cdn/shop/products/DHP-AS0_d265079e-4de5-4340-823a-231f41b7bd5a.jpg?v=1618241548"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sensor temperatura Nextia automate</h2>
+					<p class="price">$60</p>
+					<a href="ea.html"><button class="Infos">More information</button></a>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="imgs/slide2.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Desarrollo proyectos de electrónica</h2>
+					<p class="price"></p>
+					<br>
+					<a href="contacto.html"><button class="Infos"><b>Presupuestar</b></button></a>
+					
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.ctfassets.net/63bmaubptoky/bN8WA8DIIngINpjgFBv-Q2KbyqXgPmShah4fWN0fhfs/9a4fea4ba9a96ab916db01473c11cd8c/contrato-de-software-ES-Capterra-Header-1.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Desarrollo de software</h2>
+					<p class="price"></p>
+					<br>
+					<a href="https://replit.com/join/qnultyebln-ferng"><button class="Infos"><b>Más información</b></button></a>
+					<br>
+					<a href="contacto.html"><button class="Infos"><b>Presupuestar</b></button></a>
+					
+				</div>
+			</div>
+
+
+			
+		
+		<script src="index.js"></script>
+	</body>
+</html>
